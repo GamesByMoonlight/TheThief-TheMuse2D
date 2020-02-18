@@ -28,17 +28,7 @@ public class PlayerController : MonoBehaviour
 
     /// <summary>
     /// New controler inputs
-    /// </summary>
-    // input action
-    //NewControls inputAction;
     Vector2 movementInput;
-
-    private void Awake()
-    {
-       // inputAction = new NewControls();
-       // inputAction.PlayerControls.Move.performed += ctx => movementInput = ctx.ReadValue<Vector2>();
-    }
-
 
     void Start()
     {
@@ -48,29 +38,37 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-     
-
         if (isGrounded)
         {
             extraJumps = extraJumpsValue;
         }
 
-        if (IsJumping() && extraJumps > 0)
+        if(IsJumping())
         {
-            rb.velocity = Vector2.up * jumpForce;
-            extraJumps--;
-        }
-        else if (IsJumping() && extraJumps == 0 && isGrounded == true)
-        {
-            rb.velocity = Vector2.up * jumpForce;
+            JumpUp();
         }
 
     }
 
+    private void JumpUp()
+    {
+        if (extraJumps > 0)
+        {
+            rb.velocity = Vector2.up * jumpForce;
+            extraJumps--;
+        }
+        else if ( extraJumps <= 0 && isGrounded == true)
+        {
+            rb.velocity = Vector2.up * jumpForce;
+        }
+    }
+
+
+
     private static bool IsJumping()
     {
 
-        if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space)   )
         {
             return true;
         }
@@ -82,23 +80,13 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        
-
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
-
-        //moveInput = Input.GetAxis("Horizontal");
-        //moveInput = movementInput.x;
-
-        //rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
-
         Move();
-
-
-        if (facingRight== false && moveInput >0)
+        if (facingRight== false && (moveInput >0|| movementInput.x > 0 ) )
         {
             Flip();
         }
-        else if (facingRight == true && moveInput <0 )
+        else if (facingRight == true && (moveInput <0 || movementInput.x <0) )
         {
             Flip();
         }
@@ -129,35 +117,25 @@ public class PlayerController : MonoBehaviour
 
     private void OnMove(InputValue value)
     {
-        Debug.Log("Moving");
-
         movementInput = value.Get<Vector2>();
 
     }
 
     private void OnAButton()
     {
-        Debug.Log("Abutton pressed");
-
-        // transform.Translate(transform.up);
-        rb.velocity = Vector2.up * jumpForce;
-
+        JumpUp();
     }
+
 
     private void OnXButton()
     {
-        Debug.Log("X button pressed");
-        //        transform.Translate(-transform.up);   //its negative to go down
-        //        transform.Translate(transform.up);
-
+        JumpUp();
     }
 
     private void Move()
     {
         Vector3 movement = new Vector3(movementInput.x, 0,0) * speed * Time.deltaTime;
         transform.Translate(movement);
-
-
     }
 
 }
