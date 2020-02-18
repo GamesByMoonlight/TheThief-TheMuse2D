@@ -12,36 +12,33 @@ public class PlayerSpawn : MonoBehaviour
     [SerializeField]
     GameObject PlayerPrefabGuard;
 
+    int NumberOfPlayers = 1;
+    int maxPlayers = 4;
 
-    int NumberOfPlayers = 0;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.KeypadEnter))
+        if(NumberOfPlayers > maxPlayers)
         {
-            Debug.Log("starting game with Muse");
+            return;
+        }
+
+        if (Input.GetKeyDown(KeyCode.M))
+        {
             SpawnMuse();
         }
         if ( Input.GetKeyDown(KeyCode.P))
         {
-            Debug.Log("starting game with Thief");
-            SpawnMuse();
+            SpawnThief();
         }
         if (Input.GetKeyDown(KeyCode.B))
         {
-            Debug.Log("starting game with Both Players");
             SpawnBoth();
         }
         if (Input.GetKeyDown(KeyCode.G))
         {
-            Debug.Log("starting game with Both Players");
             SpawnGuard();
         }
 
