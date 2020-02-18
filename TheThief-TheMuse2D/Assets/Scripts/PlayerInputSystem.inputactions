@@ -1,0 +1,52 @@
+{
+    "name": "PlayerInputSystem",
+    "maps": [
+        {
+            "name": "Player1Controller",
+            "id": "30e29117-b9a2-49e4-947e-5f38fed96beb",
+            "actions": [
+                {
+                    "name": "Movement",
+                    "type": "Value",
+                    "id": "48436bcd-990f-4ab2-b1fa-f3bf4f379f1e",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Jump",
+                    "type": "Button",
+                    "id": "9e08d0db-23bc-41bd-bb38-f2ec53510448",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "8f37012f-8567-45aa-a58e-71b5c899f65f",
+                    "path": "<XInputController>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2640dde6-4fe8-46bb-b86c-a77b233e11ae",
+                    "path": "<XInputController>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
