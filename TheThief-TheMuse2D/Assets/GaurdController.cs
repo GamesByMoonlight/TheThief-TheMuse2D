@@ -1,15 +1,23 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class GaurdController : MonoBehaviour
 {
+    public Vector2 Player1Restart;
+    public Vector2 Player2Restart;
+
     public float speed = 10;
     public float jumpForce = 5;
     private float moveInput = -1;
 
     private bool facingRight = true;
 
+    private bool isPlayerInGuardView;
+    public Transform GuardView;
+    public float GuardViewRadius = 10f;
+    public LayerMask WhatIsPlayerLayer;
 
     private bool isGrounded;
     public Transform groundCheck;
@@ -37,6 +45,12 @@ public class GaurdController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        isPlayerInGuardView = Physics2D.OverlapCircle(GuardView.position, GuardViewRadius, WhatIsPlayerLayer);
+        if(isPlayerInGuardView)
+        {
+            PlayerInGaurdView();
+        }
+
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
         isWallChecked = Physics2D.OverlapCircle(wallCheck.position, checkRadius, whatIsGround);
         if (!isGrounded || isWallChecked)
@@ -50,6 +64,16 @@ public class GaurdController : MonoBehaviour
 
     }
 
+    private void PlayerInGaurdView()
+    {
+        Debug.Log("Caughtttttttttttttttttttttt Start over");
+        GameObject[] allPlayers = GameObject.FindGameObjectsWithTag("Player");
+
+        allPlayers[0].transform.position = new Vector3(Player1Restart.x, Player1Restart.y);
+        allPlayers[1].transform.position = new Vector3(Player2Restart.x, Player2Restart.y);
+
+    }
+
     void Flip()
     {
         facingRight = !facingRight;
@@ -57,6 +81,14 @@ public class GaurdController : MonoBehaviour
         Vector3 scaler = transform.localScale;
         scaler.x *= -1;
         transform.localScale = scaler;
+
+    }
+
+    private void OnDrawGizmos()
+    {
+//        Gizmos.DrawSphere(GuardView.position, GuardViewRadius);
+
+        Gizmos.DrawWireSphere(GuardView.position, GuardViewRadius);
 
     }
 

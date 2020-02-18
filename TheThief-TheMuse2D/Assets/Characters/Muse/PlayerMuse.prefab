@@ -260,7 +260,7 @@ GameObject:
   - component: {fileID: 5284669846931561560}
   - component: {fileID: 5284669846931561561}
   - component: {fileID: 5284669846931561542}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PlayerMuse
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -348,7 +348,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.25605118, y: 3.05}
+  m_Offset: {x: 0.25605118, y: 3.4346805}
   m_SpriteTilingProperty:
     border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
     pivot: {x: 0.5, y: 0.5}
@@ -359,7 +359,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.9011467, y: 3.6166887}
+  m_Size: {x: 1.9011467, y: 4.38605}
   m_EdgeRadius: 0
 --- !u!50 &5284669846931561542
 Rigidbody2D:
