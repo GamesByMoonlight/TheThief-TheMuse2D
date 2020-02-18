@@ -6,11 +6,11 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed =50;
-    public float jumpForce= 5;
-    private float moveInput =0;
+    public float speed = 50;
+    public float jumpForce= 50;
+    private float moveInput = 0;
 
-    private bool facingRight= true;
+    private bool facingRight = true;
 
     private bool isGrounded;
     public Transform groundCheck;
@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour
 
 
     /// <summary>
-    /// New controler inputs
+    /// New controller inputs
     /// </summary>
     // input action
     //NewControls inputAction;
@@ -64,6 +64,14 @@ public class PlayerController : MonoBehaviour
         {
             rb.velocity = Vector2.up * jumpForce;
         }
+        if (isGrounded)
+        {
+            extraJumps = extraJumpsValue;
+        }
+        if (IsJumping())
+        {
+            JumpUp();
+        }
 
     }
 
@@ -77,6 +85,19 @@ public class PlayerController : MonoBehaviour
         else
         {
             return false;
+        }
+    }
+
+    private void JumpUp()
+    {
+        if (extraJumps > 0)
+        {
+            rb.velocity = Vector2.up * jumpForce;
+            extraJumps--;
+        }
+        else if (extraJumps <= 0 && isGrounded == true)
+        {
+            rb.velocity = Vector2.up * jumpForce;
         }
     }
 
@@ -140,7 +161,7 @@ public class PlayerController : MonoBehaviour
         Debug.Log("Abutton pressed");
 
         // transform.Translate(transform.up);
-        rb.velocity = Vector2.up * jumpForce;
+        JumpUp();
 
     }
 
@@ -149,6 +170,7 @@ public class PlayerController : MonoBehaviour
         Debug.Log("X button pressed");
         //        transform.Translate(-transform.up);   //its negative to go down
         //        transform.Translate(transform.up);
+        JumpUp();
 
     }
 

@@ -41,7 +41,7 @@ public class PlayerSpawn : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.G))
         {
-            Debug.Log("starting game with Both Players");
+            Debug.Log("Focusing on guards");
             SpawnGuard();
         }
 
