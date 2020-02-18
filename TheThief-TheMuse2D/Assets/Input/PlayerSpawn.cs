@@ -25,13 +25,13 @@ public class PlayerSpawn : MonoBehaviour
             return;
         }
 
-        if (Input.GetKeyDown(KeyCode.KeypadEnter))
+        if (Input.GetKeyDown(KeyCode.M))
         {
             SpawnMuse();
         }
         if ( Input.GetKeyDown(KeyCode.P))
         {
-            SpawnMuse();
+            SpawnThief();
         }
         if (Input.GetKeyDown(KeyCode.B))
         {
