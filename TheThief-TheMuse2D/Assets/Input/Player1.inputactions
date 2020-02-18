@@ -1,0 +1,159 @@
+{
+    "name": "Player1",
+    "maps": [
+        {
+            "name": "Player1",
+            "id": "16784290-9132-4580-a52b-919212bedccb",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "Value",
+                    "id": "7ff51c0a-b924-4cd2-a649-ea465443cc72",
+                    "expectedControlType": "Stick",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "xButton",
+                    "type": "Button",
+                    "id": "2b47f621-f261-4241-a167-ce70929d72e7",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "aButton",
+                    "type": "Button",
+                    "id": "f09f12c2-f0c8-4635-bba4-07c094c2bb4c",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "fefc9505-abc8-4931-bead-385c2da1a53c",
+                    "path": "<XInputController>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "XboxController1",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ffe8c1e1-a643-4665-b948-60658fa71d2d",
+                    "path": "<XInputController>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "XboxController1",
+                    "action": "xButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d0b1050b-74a7-4534-aa23-8dde76ba210e",
+                    "path": "<XInputController>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "XboxController1",
+                    "action": "aButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Player2",
+            "id": "b0a237fd-9dd5-414c-941a-a35f54881629",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "Value",
+                    "id": "24597fe8-f623-4925-b7ac-2066dd40841f",
+                    "expectedControlType": "Stick",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "xButton",
+                    "type": "Button",
+                    "id": "63f6c1b2-c3ea-4fb4-897e-7fca9e56d829",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "aButton",
+                    "type": "Button",
+                    "id": "4bb0e79e-fea8-4869-bfa3-6f617a7f5e8e",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "4b74b35c-a150-427f-aee1-dc2c99b1a341",
+                    "path": "<XInputController>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "XBoxController2",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "279695b6-018d-4ff8-a286-276909e70877",
+                    "path": "<XInputController>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "XBoxController2",
+                    "action": "xButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0a239a7a-f11a-46af-ac11-a97eee242ca1",
+                    "path": "<XInputController>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "XBoxController2",
+                    "action": "aButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "XboxController1",
+            "bindingGroup": "XboxController1",
+            "devices": [
+                {
+                    "devicePath": "<XInputController>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "XBoxController2",
+            "bindingGroup": "XBoxController2",
+            "devices": [
+                {
+                    "devicePath": "<XInputController>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
