@@ -186,7 +186,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1619981769014298237, guid: f9a1baa121e81cd48a55d43b7befa630,
+  m_Sprite: {fileID: 3180783377984563241, guid: b2cbfb4301dc54e4291707ddd330913d,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -396,8 +396,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Luckies: 0
-  PlayerView: {fileID: 0}
-  PlayerViewRadius: 5
-  WhatIsCollectableLayer:
-    serializedVersion: 2
-    m_Bits: 0
