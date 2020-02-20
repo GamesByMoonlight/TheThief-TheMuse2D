@@ -186,7 +186,11 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+<<<<<<< HEAD
   m_Sprite: {fileID: 1307715412709137100, guid: 60f01137e1abb1f4bb3876d4a99732eb,
+=======
+  m_Sprite: {fileID: 3180783377984563241, guid: b2cbfb4301dc54e4291707ddd330913d,
+>>>>>>> master
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -260,7 +264,8 @@ GameObject:
   - component: {fileID: 5284669846931561560}
   - component: {fileID: 5284669846931561561}
   - component: {fileID: 5284669846931561542}
-  m_Layer: 0
+  - component: {fileID: 4413918278768809788}
+  m_Layer: 9
   m_Name: PlayerMuse
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -348,7 +353,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.25605118, y: 3.05}
+  m_Offset: {x: 0.25605118, y: 3.4346805}
   m_SpriteTilingProperty:
     border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
     pivot: {x: 0.5, y: 0.5}
@@ -359,7 +364,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.9011467, y: 3.6166887}
+  m_Size: {x: 1.9011467, y: 4.38605}
   m_EdgeRadius: 0
 --- !u!50 &5284669846931561542
 Rigidbody2D:
@@ -382,3 +387,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &4413918278768809788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5284669846931561543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f30bac200885894eb5fcc181b570408, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Luckies: 0
