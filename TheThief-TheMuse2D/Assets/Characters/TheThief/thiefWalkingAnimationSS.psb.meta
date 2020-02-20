@@ -1,7 +1,25 @@
 fileFormatVersion: 2
 guid: 573c7f575d251714fb2711789e8f0f26
 ScriptedImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -6765460618535275650
+    second: thiefWalkingAnimationSS_0
+  - first:
+      213: 836798115624235685
+    second: thiefWalkingAnimationSS_1
+  - first:
+      213: 305681701463336123
+    second: thiefWalkingAnimationSS_2
+  - first:
+      213: 1521577303505369468
+    second: thiefWalkingAnimationSS_3
+  - first:
+      213: -7341115777682759150
+    second: thiefWalkingAnimationSS_4
+  - first:
+      213: 8004430237581640242
+    second: thiefWalkingAnimationSS_5
   externalObjects: {}
   serializedVersion: 2
   userData: 
@@ -86,51 +104,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: Layer 4
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 214
-      y: 4
-      width: 132
-      height: 491
-    spriteID: c6b75ae4545a4ef42a7f28cb15a18ed5
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -896, y: -10}
-  - name: Layer 3
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 4
-      width: 202
-      height: 487
-    spriteID: 9975d7a326c01d846b56f8633fffbd73
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -752, y: -12}
-  - name: Layer 2
+  - name: thiefWalkingAnimationSS_0
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -139,9 +113,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 499
-      width: 139
-      height: 480
-    spriteID: ecfb554449cda2541aa7a31b537f8a7a
+      width: 138
+      height: 479
+    spriteID: e737f4299614c12a0800000000000000
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -151,8 +125,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -430, y: 479}
-  - name: Layer 1
+    uvTransform: {x: 0, y: 0}
+  - name: thiefWalkingAnimationSS_1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -162,8 +136,8 @@ ScriptedImporter:
       x: 214
       y: 503
       width: 132
-      height: 491
-    spriteID: 389a3f5f8db12cc45b8b08d5c5bb31ae
+      height: 490
+    spriteID: 5a2bf7ed377ec9b00800000000000000
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -173,7 +147,95 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 112, y: 489}
+    uvTransform: {x: 0, y: 0}
+  - name: thiefWalkingAnimationSS_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 332
+      y: 703
+      width: 8
+      height: 7
+    spriteID: bb42f0e43effd3400800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  - name: thiefWalkingAnimationSS_3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5
+      y: 5
+      width: 201
+      height: 485
+    spriteID: c79fbb1fe7abd1510800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  - name: thiefWalkingAnimationSS_4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 214
+      y: 5
+      width: 132
+      height: 489
+    spriteID: 2122438581e1f1a90800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  - name: thiefWalkingAnimationSS_5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 332
+      y: 204
+      width: 8
+      height: 7
+    spriteID: 232037c44e2751f60800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
   platformSettings: []
   mosaicLayers: 1
   documentPivot: {x: 0, y: 0}

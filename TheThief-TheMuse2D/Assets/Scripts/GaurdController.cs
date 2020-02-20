@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,7 +10,6 @@ public class GaurdController : MonoBehaviour
     private float moveInput = -1;
 
     private bool facingRight = true;
-
 
     private bool isGrounded;
     public Transform groundCheck;
@@ -24,15 +24,11 @@ public class GaurdController : MonoBehaviour
 
     public Rigidbody2D rb;
     // Start is called before the first frame update
+    public GuardActions guardActions;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        guardActions = GetComponent<GuardActions>();
     }
 
     private void FixedUpdate()
@@ -44,11 +40,13 @@ public class GaurdController : MonoBehaviour
             Flip();
             moveInput *= -1;
         }
-
         rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
-
-
     }
+
+    //private void IsPlayerInGaurdView()
+    //{
+    //    guardActions.IsPlayerInGaurdView(GuardView.position, GuardViewRadius, WhatIsPlayerLayer);
+    //}
 
     void Flip()
     {
@@ -59,6 +57,7 @@ public class GaurdController : MonoBehaviour
         transform.localScale = scaler;
 
     }
+
 
 
 }

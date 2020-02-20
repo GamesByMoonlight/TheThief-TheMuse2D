@@ -1283,7 +1283,7 @@ GameObject:
   - component: {fileID: 682638224}
   m_Layer: 0
   m_Name: PlayerInputManager
-  m_TagString: Untagged
+  m_TagString: PlayerInputManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1365,6 +1365,8 @@ MonoBehaviour:
     type: 3}
   PlayerPrefabGuard: {fileID: 8523712483562564634, guid: 1e7db8b822d366a419b8e405ef55d169,
     type: 3}
+  Player1Restart: {x: -45, y: -17}
+  Player2Restart: {x: -40, y: -17}
 --- !u!1 &689212407
 GameObject:
   m_ObjectHideFlags: 0
@@ -3444,6 +3446,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7838100107477081162, guid: 3c43d9436472de64ebbc22750d151706,
+        type: 3}
+      propertyPath: WhatIsPlayerLayer.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
     - target: {fileID: 7838100107477081166, guid: 3c43d9436472de64ebbc22750d151706,
         type: 3}
       propertyPath: m_Name
@@ -3467,12 +3474,12 @@ PrefabInstance:
     - target: {fileID: 7838100107477081161, guid: 3c43d9436472de64ebbc22750d151706,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.2
+      value: 36.19
       objectReference: {fileID: 0}
     - target: {fileID: 7838100107477081161, guid: 3c43d9436472de64ebbc22750d151706,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.6
+      value: -1.25
       objectReference: {fileID: 0}
     - target: {fileID: 7838100107477081161, guid: 3c43d9436472de64ebbc22750d151706,
         type: 3}
