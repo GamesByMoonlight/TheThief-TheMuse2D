@@ -15,6 +15,8 @@ public class PlayerSpawn : MonoBehaviour
     int NumberOfPlayers = 1;
     int maxPlayers = 4;
 
+    public Vector2 Player1Restart;
+    public Vector2 Player2Restart;
 
 
     // Update is called once per frame
@@ -79,6 +81,14 @@ public class PlayerSpawn : MonoBehaviour
     //        controlScheme: "KeyboardRight", device: Keyboard.current);
 
 
+    public void PlayerInGaurdView()
+    {
+
+        GameObject[] allPlayers = GameObject.FindGameObjectsWithTag("Player");
+        allPlayers[0].transform.position = new Vector3(Player1Restart.x, Player1Restart.y);
+        allPlayers[1].transform.position = new Vector3(Player2Restart.x, Player2Restart.y);
+
+    }
 
 
 }
