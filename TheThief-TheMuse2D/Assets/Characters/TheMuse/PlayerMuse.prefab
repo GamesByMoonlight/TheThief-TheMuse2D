@@ -260,6 +260,7 @@ GameObject:
   - component: {fileID: 5284669846931561560}
   - component: {fileID: 5284669846931561561}
   - component: {fileID: 5284669846931561542}
+  - component: {fileID: 4413918278768809788}
   m_Layer: 9
   m_Name: PlayerMuse
   m_TagString: Player
@@ -382,3 +383,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &4413918278768809788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5284669846931561543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f30bac200885894eb5fcc181b570408, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Luckies: 0
+  PlayerView: {fileID: 0}
+  PlayerViewRadius: 5
+  WhatIsCollectableLayer:
+    serializedVersion: 2
+    m_Bits: 0
