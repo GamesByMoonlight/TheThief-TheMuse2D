@@ -65,12 +65,12 @@ public class PlayerSpawn : MonoBehaviour
 
     void SpawnMuse()
     {
-        var p1 = PlayerInput.Instantiate(PlayerPrefab1);
+        var p1 = PlayerInput.Instantiate(PlayerPrefab2);
         NumberOfPlayers++;
     }
     void SpawnThief()
     {
-        var p2 = PlayerInput.Instantiate(PlayerPrefab2);
+        var p2 = PlayerInput.Instantiate(PlayerPrefab1);
         NumberOfPlayers++;
     }
 
