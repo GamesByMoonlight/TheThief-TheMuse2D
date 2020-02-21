@@ -8,8 +8,12 @@ public class Collectibles : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Luckies++;
-        collision.gameObject.SetActive(false);
+        if (collision.gameObject.CompareTag("Lucky"))
+        {
+            Luckies++;
+            collision.gameObject.SetActive(false);
+
+        }
     }
 
 
