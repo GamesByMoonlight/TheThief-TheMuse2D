@@ -9,11 +9,9 @@ public class PlayerSpawn : MonoBehaviour
     GameObject PlayerPrefab1;
     [SerializeField]
     GameObject PlayerPrefab2;
-    [SerializeField]
-    GameObject PlayerPrefabGuard;
 
     int NumberOfPlayers = 1;
-    int maxPlayers = 4;
+    int maxPlayers = 2;
 
     public Vector2 Player1Restart;
     public Vector2 Player2Restart;
@@ -39,21 +37,7 @@ public class PlayerSpawn : MonoBehaviour
         {
             SpawnBoth();
         }
-        if (Input.GetKeyDown(KeyCode.G))
-        {
-            SpawnGuard();
-        }
-
-
     }
-
-    void SpawnGuard()
-    {
-        var Guard = PlayerInput.Instantiate(PlayerPrefabGuard);
-        NumberOfPlayers++;
-    }
-
-
     void SpawnBoth()
     {
         var p1 = PlayerInput.Instantiate(PlayerPrefab1);
@@ -85,9 +69,15 @@ public class PlayerSpawn : MonoBehaviour
     {
 
         GameObject[] allPlayers = GameObject.FindGameObjectsWithTag("Player");
-        allPlayers[0].transform.position = new Vector3(Player1Restart.x, Player1Restart.y);
-        allPlayers[1].transform.position = new Vector3(Player2Restart.x, Player2Restart.y);
-
+        if (allPlayers.Length > 1)
+        {
+            allPlayers[0].transform.position = new Vector3(Player1Restart.x, Player1Restart.y);
+            allPlayers[1].transform.position = new Vector3(Player2Restart.x, Player2Restart.y);
+        }
+        else if (allPlayers.Length > 0)
+        {
+            allPlayers[0].transform.position = new Vector3(Player1Restart.x, Player1Restart.y);
+        }
     }
 
 
