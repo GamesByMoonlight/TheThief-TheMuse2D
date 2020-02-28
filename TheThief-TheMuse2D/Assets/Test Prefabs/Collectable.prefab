@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 6957143109636818925}
   - component: {fileID: 6957143109636818924}
-  - component: {fileID: -5550957646968707105}
+  - component: {fileID: 2836734893291134940}
   m_Layer: 0
   m_Name: Collectable
-  m_TagString: Untagged
+  m_TagString: Lucky
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46,7 +46,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.029958397, y: 0.00000047683716}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -57,9 +57,9 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.8188648, y: 1.9590673}
   m_EdgeRadius: 0
---- !u!114 &-5550957646968707105
+--- !u!114 &2836734893291134940
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -68,9 +68,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6957143109636818915}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 883b8adebf2c35945af6a4b7d31ea10b, type: 3}
+  m_Script: {fileID: 11500000, guid: 8f30bac200885894eb5fcc181b570408, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Luckies: 0
 --- !u!1 &6957143110332127977
 GameObject:
   m_ObjectHideFlags: 0
@@ -81,6 +82,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6957143110332127978}
   - component: {fileID: 6957143110332127979}
+  - component: {fileID: 3331435257327214688}
   m_Layer: 0
   m_Name: Clover
   m_TagString: Untagged
@@ -152,3 +154,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3331435257327214688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6957143110332127977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 883b8adebf2c35945af6a4b7d31ea10b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
